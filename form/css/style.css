@@ -1,0 +1,293 @@
+.main__countainer {
+  width: auto;
+  background: #2d5964;
+  background: linear-gradient(195deg, #2d5964 0%, #b48535 50%, #a3432b 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.main__countainer .form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.main__countainer .form__user-photo .form__user-photo-label .form__user-photo-input {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+}
+
+.main__countainer .form__user-photo .form__user-photo-label .form__user-photo-button {
+  position: relative;
+  left: 25%;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 30%;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.main__countainer .form__user-photo .form__user-photo-label .form__user-photo-button:hover {
+  background-color: white;
+  opacity: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main__countainer .form__img {
+  width: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.main__countainer .form__group {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+.main__countainer .form__label {
+  color: black;
+}
+
+.main__countainer .form__input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  width: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.main__countainer .form__input::-webkit-input-placeholder {
+  color: black;
+  position: relative;
+  left: 10px;
+}
+
+.main__countainer .form__input:-ms-input-placeholder {
+  color: black;
+  position: relative;
+  left: 10px;
+}
+
+.main__countainer .form__input::-ms-input-placeholder {
+  color: black;
+  position: relative;
+  left: 10px;
+}
+
+.main__countainer .form__input::placeholder {
+  color: black;
+  position: relative;
+  left: 10px;
+}
+
+.main__countainer .form__support-menu {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__countainer .form__support-menu .text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  bottom: 1px;
+  color: black;
+}
+
+.main__countainer .form__support-menu .text:hover {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main__countainer .form__support-menu .form__support-menu-label {
+  font-size: 15px;
+  font-weight: normal;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.main__countainer .form__support-menu .form__support-menu-input {
+  display: none;
+}
+
+.main__countainer .form__support-menu .fake {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.main__countainer .form__support-menu .fake:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 15px;
+  height: 15px;
+  opacity: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: black;
+  z-index: 1;
+}
+
+.main__countainer .form__support-menu .fake:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url(../image/1486395886-checkmark_80611.png) no-repeat;
+  background-size: 10px 10px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.main__countainer .form__support-menu .form__support-menu-input:checked + .fake:before {
+  background-color: black;
+}
+
+.main__countainer .form__support-menu .form__support-menu-input:checked + .fake:after {
+  opacity: 1;
+}
+
+.main__countainer .form__support-menu .form__support-menu-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.main__countainer .form__support-menu .form__support-menu-button .text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.main__countainer .form__support-menu .form__support-menu-button .text:hover {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main__countainer .form__login {
+  position: relative;
+  left: 20%;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 50%;
+}
+
+.main__countainer .form__login:hover {
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main__countainer .form__login .form__login-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.main__countainer .form__login .form__login-button:hover {
+  color: springgreen;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.main__countainer .form__search {
+  position: relative;
+  left: 20%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid black;
+  width: 200px;
+}
+
+.main__countainer .form__search .form__search-img {
+  width: 25px;
+  padding-left: 30px;
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.main__countainer .form__search .form__search-input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blanchedalmond;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.main__countainer .form__search .form__search-input::-webkit-input-placeholder {
+  color: blanchedalmond;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  opacity: 50%;
+}
+
+.main__countainer .form__search .form__search-input:-ms-input-placeholder {
+  color: blanchedalmond;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  opacity: 50%;
+}
+
+.main__countainer .form__search .form__search-input::-ms-input-placeholder {
+  color: blanchedalmond;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  opacity: 50%;
+}
+
+.main__countainer .form__search .form__search-input::placeholder {
+  color: blanchedalmond;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  opacity: 50%;
+}
+
+.main__countainer .form__search .form__search-button {
+  border: none;
+  background: transparent;
+}
+/*# sourceMappingURL=style.css.map */
